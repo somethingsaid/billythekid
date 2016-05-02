@@ -113,3 +113,14 @@ body {
       letter-spacing: 0.5px;
       font-size: 20px;
       line-height: 150%; }
+
+/* Work */
+.my-work {
+  background-color: #e6e6e6;
+  width: 100%;
+  padding-top: 50px; }
+  .my-work .work-title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #ECCF05; }
