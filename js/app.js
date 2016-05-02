@@ -1,5 +1,5 @@
 angular.module('myApp', ['ngAnimate'])
-    .controller('myController', function($scope) {
+    .controller('myController', ['$scope', '$http', function($scope, $http) {
     	$scope.currentPage = null;
     	/* Show quick Menu */
     	$scope.showQuickMenu = function() {
@@ -47,6 +47,13 @@ angular.module('myApp', ['ngAnimate'])
 			$scope.myWork = true;
 			$scope.floatNav = true;
 			$scope.currentPage = 'work';
+			$http.get('../data/data.json')
+			.then(function(response) {
+				$scope.projects = response.data.projects.projects;
+			},
+			function(response) {
+				console.log('Error retrieving project details');
+			});
 		}
 
-    });
+    }]);

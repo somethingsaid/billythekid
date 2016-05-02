@@ -47,12 +47,13 @@
 				Poutine Addict
 			</h2>
 			<a href="mailto:kwong.billy@gmail.com">kwong.billy@gmail.com</a>
-			<a href="https://instagram.com/somethingsaid">@somethingsaid</a>
+			<a href="http://www.github.com/somethingsaid" target="_blank">GitHub</a>
+			<a href="https://www.instagram.com/somethingsaid" target="_blank">@somethingsaid</a>
 			<a href="BillyKwong_2016.pdf" download>See my resumé</a>
 		</div>
 		<div class="blurb">
 			<h1>Nice to meet you,</h1>
-			<p>My name is Billy Kwong and I'm a web developer from just north of Toronto, Ontario.  I've worked with financial insitutions and telecomm giants in a data science capacity in the past.  I'm currently studying web technologies at Thinkful.com for self-development and to rediscover my interest in programming. In my spare time I enjoy binge-eating, juggling multiple novels, and occasionally exercising.
+			<p>My name is Billy Kwong and I'm a web developer from just north of Toronto, Ontario.  I've worked with financial insitutions and telecomm giants in a data science capacity in the past.  I'm currently studying web technologies at Thinkful.com for self-development and to rediscover my interest in programming. In my spare time I enjoy binge-eating, juggling multiple novels, and playing recreational soccer.
 		</div>
 	</section>
 	<section class="my-work" ng-if="myWork">
@@ -60,6 +61,8 @@
 			<h1>My Work.</h1>
 		</div>
 		<div class="project" ng-repeat="project in projects">
+			<h1>{{project.name}}</h1>
+			<p>{{project.imageUrl}}</p>
 		</div>
 	</section>
 	
