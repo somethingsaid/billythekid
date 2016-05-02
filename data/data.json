@@ -1,15 +1,21 @@
 {"projects":{
 	"projects":[{
-		"name": "1st Project",
-		"imageUrl": "tbd"
+		"name": "Flickr Searcher",
+		"image": "../images/project_1.jpg",
+		"description": "Search for photos by tags.  Built with AngularJS.",
+		"url": "http://somethingsaid.github.io/flickr-searcher"
 		},
 		{
-		"name": "2nd Project",
-		"imageUrl": "also tbd"
+		"name": "GeoFlicks",
+		"image": "../images/project_2.jpg",
+		"description": "Search for photos by location.  Utilizes Google Maps, Google Geocode, and Flickr APIs.",
+		"url": "http://somethingsaid.github.io/geoflicks"
 		},
 		{
-		"name": "3rd Project",
-		"imageUrl": "very much tbd"
+		"name": "Waitstaff Calculator",
+		"image": "../images/project_3.jpg",
+		"description": "First project with Angular directives",
+		"url": "http://somethingsaid.github.io/waitstaff-calculator"
 	}]
 }   
 }

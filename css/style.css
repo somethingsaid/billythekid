@@ -125,9 +125,22 @@ body {
     font-weight: bold;
     text-align: center;
     color: #ECCF05; }
-  .my-work .project {
-    background-color: #FFFFFF; }
-    .my-work .project .project-container {
-      width: 95%;
-      padding: 15px 15px;
-      background-color: coral; }
+  .my-work a {
+    text-decoration: none;
+    color: #FFFFFF; }
+  .my-work .project-container {
+    width: 75%;
+    height: 275px;
+    margin: 30px auto;
+    padding: 15px 15px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    transition: all .2s ease-in-out; }
+    .my-work .project-container h1 {
+      font-size: 48px;
+      padding-top: 50px; }
+    .my-work .project-container p {
+      color: yellow; }
+  .my-work .project-container:hover {
+    transform: scale(1.25); }
