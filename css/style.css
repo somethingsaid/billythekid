@@ -139,7 +139,7 @@ body {
     color: #FFFFFF; }
   .my-work .project-container {
     width: 75%;
-    height: 275px;
+    height: 350px;
     margin: 30px auto;
     padding: 15px 15px;
     text-align: center;
@@ -150,8 +150,18 @@ body {
       font-size: 48px;
       padding-top: 50px; }
     .my-work .project-container p {
-      color: yellow; }
+      color: #fae02a; }
   .my-work .project-container:hover {
     transform: scale(1.25); }
 
-/* Animations */
+@media screen and (max-width: 768px) {
+  .quickMenu div {
+    width: 95%;
+    position: fixed;
+    top: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .quickMenu ul {
+    font-size: 48px;
+    width: 100%; } }
