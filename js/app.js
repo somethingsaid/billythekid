@@ -57,23 +57,38 @@ angular.module('myApp', ['ngAnimate'])
 		}
 
 		/* Portfolio Data, can't get gh-pages to work with data/*.json 404 error*/
-		$scope.projects = [{
-			"name": "Flickr Searcher",
-			"image": "images/project_1.jpg",
-			"description": "Search for photos by tags.  Built with AngularJS.",
-			"url": "http://somethingsaid.github.io/flickr-searcher"
+		$scope.projects = [
+		    {
+				"name": "Flickr Searcher",
+				"image": "images/project_1.jpg",
+				"description": "Search for photos by tags.  Built with AngularJS.",
+				"url": "http://somethingsaid.github.io/flickr-searcher"
 			},
 			{
-			"name": "GeoFlicks",
-			"image": "images/project_2.jpg",
-			"description": "Search for photos by location.  Utilizes Google Maps, Google Geocode, and Flickr APIs.",
-			"url": "http://somethingsaid.github.io/geoflicks"
+				"name": "GeoFlicks",
+				"image": "images/project_2.jpg",
+				"description": "Search for photos by location.  Utilizes Google Maps, Google Geocode, and Flickr APIs.",
+				"url": "http://somethingsaid.github.io/geoflicks"
 			},
 			{
-			"name": "Waitstaff Calculator",
-			"image": "images/project_3.jpg",
-			"description": "First project with Angular directives",
-			"url": "http://somethingsaid.github.io/waitstaff-calculator"
-		}]
+				"name": "Waitstaff Calculator",
+				"image": "images/project_3.jpg",
+				"description": "First project with Angular directives",
+				"url": "http://somethingsaid.github.io/waitstaff-calculator"
+			},
+			{
+				"name": "JQuery Streetfighter",
+				"image": "images/project_4.jpg",
+				"description": "Animate Ryu with jQuery event listeners",
+				"url": "http://somethingsaid.github.io/jquery-streetfighter/main.html"
+			},
+			{
+				"name": "Hot or Cold",
+				"image": "images/project_5.jpg",
+				"description": "A simple number guessing game",
+				"url": "http://somethingsaid.github.io/hot_or_cold"
+			}
+
+		]
 
     }]);
