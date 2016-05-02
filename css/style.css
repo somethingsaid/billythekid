@@ -9,26 +9,60 @@ html, body {
 body {
   background: url("../images/background.jpeg") no-repeat center fixed;
   background-size: cover;
-  background-color: #04A4CC; }
+  background-color: #808080; }
+
+/* Navigation */
+ul {
+  list-style-type: none;
+  color: #ECCF05;
+  position: fixed;
+  width: 100%; }
+  ul li {
+    display: inline-block;
+    width: 48%;
+    margin: auto; }
+  ul li:nth-child(2) {
+    text-align: right;
+    padding-right: 20px; }
 
 /* Landing page */
 .landing {
   width: 100%;
-  color: #ECCF05; }
+  color: #FF1717; }
 
 .title {
-  position: fixed;
-  top: 40%;
-  width: 100%;
-  text-align: center; }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  text-align: center;
+  border: solid 2px #ECCF05; }
   .title h1 {
     font-size: 50px;
     margin: 0; }
 
-a {
-  text-decoration: none;
-  display: inline-block;
+/* About */
+.about-me {
+  position: absolute;
+  top: 10%;
+  background-color: #e6e6e6;
   width: 100%; }
-
-a:hover {
-  color: #fae02a; }
+  .about-me .summary {
+    width: 95%;
+    margin: auto;
+    padding: 50px 0; }
+    .about-me .summary h1 {
+      font-size: 24px;
+      color: #ECCF05; }
+    .about-me .summary h2 {
+      margin-top: 0px;
+      font-size: 48px;
+      letter-spacing: 0.25px; }
+    .about-me .summary a {
+      text-decoration: none;
+      font-weight: 100;
+      color: #808080;
+      display: block; }
+    .about-me .summary a:hover {
+      color: #9a9a9a; }

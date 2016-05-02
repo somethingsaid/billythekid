@@ -12,20 +12,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Billy Kwong</title>
 </head>
-<body ng-controller="myController">
-	<section class="landing">
-		<nav class="navigation">
-			<ul>
-				<li>About</li>
-				<li>My Work</li>
-			</ul>
-		</nav>
+<body ng-controller="myController" ng-init="aboutMe = true; landing=false; myWork=false;">
+	<nav class="navigation">
+		<ul>
+			<li>About</li>
+			<li>My Work</li>
+		</ul>
+	</nav>
+	<section class="landing" ng-if="landing">
 		<div class="title">
 			<h1>Billy.</h1>
-			<a href="mailto:kwong.billy@gmail.com" target="_top">kwong.billy@gmail.com</a>
+			<p>Web Developer</p>
 		</div>
 	</section>
-	<section class="about-me">
+	<section class="about-me" ng-if="aboutMe">
+		<div class="summary">
+			<h1>Billy Kwong</h1>
+			<h2>
+				Web Developer,
+				<br>
+				Data Scientist,
+				<br>
+				Poutine Addict
+			</h2>
+			<a href="mailto:kwong.billy@gmail.com">kwong.billy@gmail.com</a>
+			<a href="https://instagram.com/somethingsaid">@somethingsaid</a>
 	</section>
 	<section class="my-work">
 	</section>

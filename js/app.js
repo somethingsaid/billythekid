@@ -1,4 +1,4 @@
 angular.module('myApp', ['ngAnimate'])
-    .controller('myController', function() {
+    .controller('myController', function($scope) {
 
     });
