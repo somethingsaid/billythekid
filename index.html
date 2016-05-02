@@ -12,14 +12,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Billy Kwong</title>
 </head>
-<body ng-controller="myController" ng-init="aboutMe = true; landing=false; myWork=false;">
-	<nav class="navigation">
+<body ng-controller="myController" ng-init="landing = false; aboutMe = false; myWork = false; floatNav = false; quickMenu = true;">
+	<div class="float-nav" ng-if="floatNav">
+		<span>Menu</span>
+	</div>
+	<div class="quickMenu" ng-if="quickMenu">
+		<span>Close Menu</span>
 		<ul>
+			<li>Home</li>
 			<li>About</li>
 			<li>My Work</li>
 		</ul>
-	</nav>
+	</div>
 	<section class="landing" ng-if="landing">
+		<nav class="navigation">
+			<ul>
+				<li>About</li>
+				<li>My Work</li>
+			</ul>
+		</nav>
 		<div class="title">
 			<h1>Billy.</h1>
 			<p>Web Developer</p>
@@ -37,6 +48,12 @@
 			</h2>
 			<a href="mailto:kwong.billy@gmail.com">kwong.billy@gmail.com</a>
 			<a href="https://instagram.com/somethingsaid">@somethingsaid</a>
+			<a href="BillyKwong_2016.pdf" download>See my resumé</a>
+		</div>
+		<div class="blurb">
+			<h1>Nice to meet you,</h1>
+			<p>My name is Billy Kwong and I'm a web developer from just north of Toronto, Ontario.  I've worked with financial insitutions and telecomm giants in a data science capacity in the past.  I'm currently studying web technologies at Thinkful.com for self-development and to rediscover my interest in programming. In my spare time I enjoy binge-eating, juggling multiple novels, and occasionally some exercise.
+		</div>
 	</section>
 	<section class="my-work">
 	</section>
