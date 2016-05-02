@@ -18,18 +18,21 @@
 	</div>
 	<div class="quickMenu" ng-if="quickMenu">
 		<span ng-click="closeMenu()">Close Menu.</span>
-		<ul>
-			<li ng-click="showLanding()">Home</li>
-			<li ng-click="showAboutMe()">About</li>
-			<li ng-click="showMyWork()">My Work</li>
-		</ul>
-	</div>
-	<section class="landing" ng-if="landing">
-		<nav class="navigation">
+		<div>
 			<ul>
+				<li ng-click="showLanding()">Home</li>
 				<li ng-click="showAboutMe()">About</li>
 				<li ng-click="showMyWork()">My Work</li>
 			</ul>
+		</div>
+	</div>
+	<section class="landing" ng-if="landing">
+		<nav class="navigation">
+			<div>
+		    <ul>
+			    <li ng-click="showAboutMe()">About</li>
+			    <li ng-click="showMyWork()">My Work</li>
+		    </ul>
 		</nav>
 		<div class="title">
 			<h1>Billy.</h1>

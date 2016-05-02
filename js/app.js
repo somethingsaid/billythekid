@@ -1,5 +1,5 @@
 angular.module('myApp', ['ngAnimate'])
-    .controller('myController', ['$scope', '$http', function($scope, $http) {
+    .controller('myController', ['$scope', function($scope) {
     	$scope.currentPage = null;
     	/* Show quick Menu */
     	$scope.showQuickMenu = function() {
@@ -47,13 +47,33 @@ angular.module('myApp', ['ngAnimate'])
 			$scope.myWork = true;
 			$scope.floatNav = true;
 			$scope.currentPage = 'work';
-			$http.get('../data/data.json')
-			.then(function(response) {
-				$scope.projects = response.data.projects.projects;
-			},
-			function(response) {
-				console.log('Error retrieving project details');
-			});
+			// $http.get('../data/data.json')
+			//  .then(function(response) {
+			//  	$scope.projects = response.data.projects.projects;
+			//  },
+			//  function(response) {
+			//  	console.log('Error retrieving project details');
+			//  });
 		}
+
+		/* Portfolio Data, can't get gh-pages to work with data/*.json 404 error*/
+		$scope.projects = [{
+			"name": "Flickr Searcher",
+			"image": "images/project_1.jpg",
+			"description": "Search for photos by tags.  Built with AngularJS.",
+			"url": "http://somethingsaid.github.io/flickr-searcher"
+			},
+			{
+			"name": "GeoFlicks",
+			"image": "images/project_2.jpg",
+			"description": "Search for photos by location.  Utilizes Google Maps, Google Geocode, and Flickr APIs.",
+			"url": "http://somethingsaid.github.io/geoflicks"
+			},
+			{
+			"name": "Waitstaff Calculator",
+			"image": "images/project_3.jpg",
+			"description": "First project with Angular directives",
+			"url": "http://somethingsaid.github.io/waitstaff-calculator"
+		}]
 
     }]);
