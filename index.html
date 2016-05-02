@@ -12,23 +12,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Billy Kwong</title>
 </head>
-<body ng-controller="myController" ng-init="landing = false; aboutMe = false; myWork = true; floatNav = true; quickMenu = false;">
+<body ng-controller="myController" ng-init="landing = true; aboutMe = false; myWork = false; floatNav = false; quickMenu = false;">
 	<div class="float-nav" ng-if="floatNav">
-		<span>Menu.</span>
+		<span ng-click="showQuickMenu();">Menu.</span>
 	</div>
 	<div class="quickMenu" ng-if="quickMenu">
-		<span>Close Menu.</span>
+		<span ng-click="closeMenu()">Close Menu.</span>
 		<ul>
-			<li>Home</li>
-			<li>About</li>
-			<li>My Work</li>
+			<li ng-click="showLanding()">Home</li>
+			<li ng-click="showAboutMe()">About</li>
+			<li ng-click="showMyWork()">My Work</li>
 		</ul>
 	</div>
 	<section class="landing" ng-if="landing">
 		<nav class="navigation">
 			<ul>
-				<li>About</li>
-				<li>My Work</li>
+				<li ng-click="showAboutMe()">About</li>
+				<li ng-click="showMyWork()">My Work</li>
 			</ul>
 		</nav>
 		<div class="title">
@@ -55,7 +55,7 @@
 			<p>My name is Billy Kwong and I'm a web developer from just north of Toronto, Ontario.  I've worked with financial insitutions and telecomm giants in a data science capacity in the past.  I'm currently studying web technologies at Thinkful.com for self-development and to rediscover my interest in programming. In my spare time I enjoy binge-eating, juggling multiple novels, and occasionally exercising.
 		</div>
 	</section>
-	<section class="my-work">
+	<section class="my-work" ng-if="myWork">
 		<div class="work-title">
 			<h1>My Work.</h1>
 		</div>
