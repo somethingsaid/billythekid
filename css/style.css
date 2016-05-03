@@ -165,3 +165,7 @@ body {
   .quickMenu ul {
     font-size: 48px;
     width: 100%; } }
+
+@media screen and (max-width: 400px) {
+  .my-work .project-container h1 {
+    font-size: 32px; } }
